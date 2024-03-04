@@ -20,7 +20,6 @@ public class MappingClassController {
     }
 
 //  화원 조회 GET /mapping/users/{userId}
-
     @GetMapping("/{userId}")
     public String findUser(@PathVariable("userId") String userId) {
         return "get userId=" + userId;
